@@ -144,24 +144,29 @@ h2.st{font-size:22px;color:var(--navy);margin:30px 0 12px}
 </style>
 
 <style>
-/* v22 – contact card refinement */
-:root{--pink:#d92d7a}
+/* v25 – cleaner contact cards */
+.contacttitleline{display:flex;align-items:baseline;gap:9px;margin-bottom:9px}
+.contacttitleline .contacttitle{margin-bottom:0}
+.william{font-size:15px!important;font-weight:500!important;color:#7d8d98!important;margin:0!important}
 .contactrow svg{
   width:22px!important;height:22px!important;
-  stroke:var(--pink)!important;stroke-width:2.2!important;
+  stroke:#8bcfe8!important;stroke-width:2!important;
   flex:none!important
 }
 .phonebig{
-  font-size:18px!important;
-  font-weight:700!important;
+  font-size:17px!important;
+  font-weight:500!important;
+  color:#405766!important;
+  letter-spacing:.05px;
 }
 .emailbig{
-  font-size:17px!important;
-  font-weight:600!important;
-  color:#18344a!important;
+  font-size:16px!important;
+  font-weight:500!important;
+  color:#405766!important;
+  overflow-wrap:anywhere;
 }
 #supportNote{
-  margin-top:83px!important;
+  margin-top:36px!important;
 }
 </style>
 </head>
@@ -234,14 +239,16 @@ h2.st{font-size:22px;color:var(--navy);margin:30px 0 12px}
     <p class="contact-intro" id="contactIntro">Velg om du vil kontakte meg direkte eller Telenor kundeservice.</p>
     <div class="contactgrid">
       <a class="contactcard seller" href="tel:+4747666135" style="text-decoration:none">
-        <div class="contacttitle" id="sellerTitle">Kontakt selger</div>
-        <div class="william">William Zahl</div>
+        <div class="contacttitleline">
+          <div class="contacttitle" id="sellerTitle">Kontakt selger</div>
+          <div class="william">William Zahl</div>
+        </div>
         <div class="contactrow">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#d92d7a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.62a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.84.29 1.72.5 2.62.62A2 2 0 0 1 22 16.92z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#8bcfe8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.62a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.84.29 1.72.5 2.62.62A2 2 0 0 1 22 16.92z"/></svg>
           <span class="phonebig">+47 47666135</span>
         </div>
         <div class="contactrow">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#9d78dc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#8bcfe8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
           <span class="emailbig">william.zahl@electi.no</span>
         </div>
         <small class="smallnote" id="sellerNote">Ta kontakt med meg hvis du lurer på noe før du bestemmer deg.</small>
@@ -251,7 +258,7 @@ h2.st{font-size:22px;color:var(--navy);margin:30px 0 12px}
         <div>
           <div class="contacttitle" id="supportTitle">Kontakt Telenor kundeservice</div>
           <div class="contactrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#d92d7a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.62a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.84.29 1.72.5 2.62.62A2 2 0 0 1 22 16.92z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#8bcfe8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.62a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.84.29 1.72.5 2.62.62A2 2 0 0 1 22 16.92z"/></svg>
             <span class="phonebig">915 09 000</span>
           </div>
           <small class="smallnote" id="supportNote">Dersom du har et kundeforhold eller nettopp signert kontrakt, kan du kontakte Telenor kundeservice.</small>
