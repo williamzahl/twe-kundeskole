@@ -1,33 +1,87 @@
 <!doctype html><html lang="no"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>T-We Kundeskole</title><style>
-:root{--n:#071b33;--b:#0879d1;--bg:#f4f7fb;--txt:#142235;--mut:#607086;--line:#dfe6ef}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--txt)}.top{background:linear-gradient(135deg,#071b33,#0c3157);color:white;padding:25px 20px;position:sticky;top:0;z-index:5}.topin,.layout,.foot{max-width:1160px;margin:auto}.brand{display:flex;justify-content:space-between;gap:20px}.brand b{font-size:20px}.sub{font-size:13px;opacity:.75;margin-top:3px}.prog{margin-top:18px}.pl{display:flex;justify-content:space-between;font-size:12px;opacity:.8;margin-bottom:6px}.bar{height:5px;background:#ffffff25;border-radius:9px}.fill{height:100%;background:#28a5f5;width:25%;transition:.3s}.layout{display:grid;grid-template-columns:245px 1fr;gap:25px;padding:30px 18px 55px}.side{background:white;border:1px solid var(--line);border-radius:18px;padding:15px;height:max-content;position:sticky;top:145px;box-shadow:0 7px 25px #0a1e3710}.label{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--mut);margin:5px 8px 10px}.lb{display:flex;width:100%;border:0;background:none;text-align:left;padding:12px 9px;border-radius:11px;cursor:pointer;gap:10px;font-size:13px;color:var(--txt);margin-bottom:3px}.lb:hover,.lb.on{background:#eaf5fd}.lb.on{color:#066ebd;font-weight:750}.num{font-size:11px;font-weight:800;color:#8a99aa;min-width:23px}.on .num{color:var(--b)}.card{background:white;border:1px solid var(--line);border-radius:22px;padding:35px;box-shadow:0 10px 35px #0a1e3710}.kick{font-size:12px;color:var(--b);font-weight:850;letter-spacing:1px;text-transform:uppercase}h1{font-size:38px;line-height:1.1;margin:9px 0 13px;letter-spacing:-1px}.lead{font-size:17px;line-height:1.65;color:var(--mut);max-width:800px}.text{font-size:15px;line-height:1.75;color:#34465b}.video{aspect-ratio:16/9;background:#000;border-radius:15px;overflow:hidden;margin:22px 0 28px;box-shadow:0 12px 28px #0002}.video iframe{width:100%;height:100%;border:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}.info{border:1px solid var(--line);border-radius:14px;padding:17px;background:#fbfcfe}.info b{display:block;margin-bottom:6px}.info p{margin:0;color:var(--mut);font-size:13px;line-height:1.55}.note{border-left:4px solid var(--b);background:#f1f7fc;padding:15px 17px;border-radius:0 11px 11px 0;font-size:14px;line-height:1.65;margin:21px 0}.st{font-size:22px;margin:30px 0 8px}.vc{border-top:1px solid var(--line);padding-top:22px;margin-top:22px}.vc h3{font-size:18px;margin:0 0 7px}.vc p{font-size:14px;color:var(--mut);line-height:1.65}.actions{display:flex;justify-content:space-between;margin-top:28px;padding-top:22px;border-top:1px solid var(--line)}button.nav{border:1px solid var(--line);background:white;padding:12px 17px;border-radius:11px;font-weight:750;cursor:pointer}button.primary{background:var(--n);color:white;border-color:var(--n)}button:disabled{opacity:.35}.cta{margin-top:25px;background:linear-gradient(135deg,var(--n),#0b3d69);color:white;border-radius:17px;padding:24px}.cta h2{margin:0 0 7px}.cta p{margin:0;line-height:1.6;color:#ffffffc9}.foot{text-align:center;color:#7b8999;font-size:12px;padding:0 18px 30px}@media(max-width:850px){.layout{grid-template-columns:1fr}.side{position:relative;top:auto;display:grid;grid-template-columns:1fr 1fr}.label{grid-column:1/-1}.card{padding:25px}}@media(max-width:580px){.side{grid-template-columns:1fr}h1{font-size:31px}.grid{grid-template-columns:1fr}.card{padding:20px}}
-</style></head><body>
-<header class="top"><div class="topin"><div class="brand"><div><b>T-We KUNDESKOLE</b><div class="sub">T-We & Streaming – enkelt forklart</div></div><span id="count" style="font-size:13px;opacity:.8">Leksjon 1 av 5</span></div><div class="prog"><div class="pl"><span>Din fremgang</span><span id="pct">25%</span></div><div class="bar"><div class="fill" id="fill"></div></div></div></div></header>
+:root{--n:#071b33;--b:#0879d1;--bg:#f4f7fb;--txt:#142235;--mut:#607086;--line:#dfe6ef}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--txt)}.top{background:linear-gradient(135deg,#071b33,#0c3157);color:white;padding:25px 20px;position:sticky;top:0;z-index:5}.topin,.layout,.foot{max-width:1160px;margin:auto}.brand{display:flex;justify-content:space-between;gap:20px}.brand b{font-size:20px}.sub{font-size:13px;opacity:.75;margin-top:3px}.prog{margin-top:18px}.pl{display:flex;justify-content:space-between;font-size:12px;opacity:.8;margin-bottom:6px}.bar{height:5px;background:#ffffff25;border-radius:9px}.fill{height:100%;background:#28a5f5;width:25%;transition:.3s}.layout{display:grid;grid-template-columns:245px 1fr;gap:25px;padding:30px 18px 55px}.side{background:white;border:1px solid var(--line);border-radius:18px;padding:15px;height:max-content;position:sticky;top:145px;box-shadow:0 7px 25px #0a1e3710}.label{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--mut);margin:5px 8px 10px}.lb{display:flex;width:100%;border:0;background:none;text-align:left;padding:12px 9px;border-radius:11px;cursor:pointer;gap:10px;font-size:13px;color:var(--txt);margin-bottom:3px}.lb:hover,.lb.on{background:#eaf5fd}.lb.on{color:#066ebd;font-weight:750}.num{font-size:11px;font-weight:800;color:#8a99aa;min-width:23px}.on .num{color:var(--b)}.lesson-logo{height:30px;width:auto;display:block;margin:0 0 20px 0}.contact-section{margin-top:25px;background:white;border:1px solid var(--line);border-radius:22px;padding:30px 35px;box-shadow:0 10px 35px #0a1e3710}.contact-section h2{margin:0 0 8px;font-size:28px}.contact-section>p{margin:0 0 20px;color:var(--mut);line-height:1.6}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.contact-card{border:1px solid var(--line);border-radius:15px;padding:18px;text-decoration:none;color:var(--txt);background:#fbfcfe}.contact-card:hover{background:#eaf5fd}.contact-card b{display:block;margin-bottom:5px}.contact-card span{font-size:13px;color:var(--mut)}@media(max-width:580px){.contact-grid{grid-template-columns:1fr}}.card{background:white;border:1px solid var(--line);border-radius:22px;padding:35px;box-shadow:0 10px 35px #0a1e3710}.kick{font-size:12px;color:var(--b);font-weight:850;letter-spacing:1px;text-transform:uppercase}h1{font-size:38px;line-height:1.1;margin:9px 0 13px;letter-spacing:-1px}.lead{font-size:17px;line-height:1.65;color:var(--mut);max-width:800px}.text{font-size:15px;line-height:1.75;color:#34465b}.video{aspect-ratio:16/9;background:#000;border-radius:15px;overflow:hidden;margin:22px 0 28px;box-shadow:0 12px 28px #0002}.video iframe{width:100%;height:100%;border:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}.info{border:1px solid var(--line);border-radius:14px;padding:17px;background:#fbfcfe}.info b{display:block;margin-bottom:6px}.info p{margin:0;color:var(--mut);font-size:13px;line-height:1.55}.note{border-left:4px solid var(--b);background:#f1f7fc;padding:15px 17px;border-radius:0 11px 11px 0;font-size:14px;line-height:1.65;margin:21px 0}.st{font-size:22px;margin:30px 0 8px}.vc{border-top:1px solid var(--line);padding-top:22px;margin-top:22px}.vc h3{font-size:18px;margin:0 0 7px}.vc p{font-size:14px;color:var(--mut);line-height:1.65}.actions{display:flex;justify-content:space-between;margin-top:28px;padding-top:22px;border-top:1px solid var(--line)}button.nav{border:1px solid var(--line);background:white;padding:12px 17px;border-radius:11px;font-weight:750;cursor:pointer}button.primary{background:var(--n);color:white;border-color:var(--n)}button:disabled{opacity:.35}.cta{margin-top:25px;background:linear-gradient(135deg,var(--n),#0b3d69);color:white;border-radius:17px;padding:24px}.cta h2{margin:0 0 7px}.cta p{margin:0;line-height:1.6;color:#ffffffc9}.foot{text-align:center;color:#7b8999;font-size:12px;padding:0 18px 30px}.contact-fab{position:fixed;right:18px;bottom:18px;z-index:20;width:58px;height:58px;border:0;border-radius:50%;background:#0879d1;color:#fff;box-shadow:0 8px 24px #071b3340;cursor:pointer;font-size:25px;display:flex;align-items:center;justify-content:center}.contact-fab:hover{transform:translateY(-1px)}.contact-box{position:fixed;right:18px;bottom:88px;z-index:19;width:285px;background:#fff;border:1px solid var(--line);border-radius:17px;box-shadow:0 14px 40px #071b3330;padding:18px;display:none}.contact-box.on{display:block}.contact-box h3{margin:0 0 5px;font-size:17px}.contact-box p{margin:0 0 14px;color:var(--mut);font-size:13px}.contact-link{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--txt);padding:11px 10px;border-radius:10px;background:#f5f8fb;margin-top:8px;font-size:14px}.contact-link:hover{background:#eaf5fd}.contact-close{position:absolute;right:10px;top:8px;border:0;background:none;font-size:22px;color:#7b8999;cursor:pointer}@media(max-width:580px){.contact-box{right:14px;bottom:84px;width:calc(100vw - 28px)}.contact-fab{right:14px;bottom:14px}}@media(max-width:850px){.layout{grid-template-columns:1fr}.side{position:relative;top:auto;display:grid;grid-template-columns:1fr 1fr}.label{grid-column:1/-1}.card{padding:25px}}@media(max-width:580px){.side{grid-template-columns:1fr}h1{font-size:31px}.grid{grid-template-columns:1fr}.card{padding:20px}}
+</style>
+<style>
+:root{
+  --telenor-blue:#0077C8;
+  --telenor-light:#EAF7FF;
+  --telenor-pale:#F6FCFF;
+  --telenor-text:#0B2433;
+}
+body{background:var(--telenor-pale)!important;color:var(--telenor-text)!important}
+.contact-float{
+ position:fixed;right:18px;bottom:18px;z-index:9999;
+ width:56px;height:56px;border-radius:50%;
+ display:flex;align-items:center;justify-content:center;
+ background:var(--telenor-blue);color:#fff!important;
+ text-decoration:none;font-size:25px;
+ box-shadow:0 8px 25px rgba(0,80,130,.25)
+}
+.info-section{display:grid;gap:18px;margin:28px 0}
+.info-card{
+ background:#fff;border:1px solid #d6edf9;border-radius:18px;
+ padding:24px;box-shadow:0 8px 25px rgba(0,80,130,.07)
+}
+.info-icon{font-size:28px;margin-bottom:8px}
+.info-card h3{color:var(--telenor-blue);margin:0 0 10px}
+.info-card p{line-height:1.65}
+.highlight{background:var(--telenor-light);padding:14px;border-radius:12px}
+.contact-panel{
+ background:#fff;border:1px solid #d6edf9;border-radius:18px;
+ padding:24px;margin:30px 0
+}
+.contact-panel a{color:var(--telenor-blue);font-weight:700}
+</style>
+</head><body>
+<header class="top"><div class="topin"><div class="brand"><div><b>T-We KUNDESKOLE</b><div class="sub">T-We & Streaming – enkelt forklart</div></div><span id="count" style="font-size:13px;opacity:.8">Leksjon 1 av 6</span></div><div class="prog"><div class="pl"><span>Din fremgang</span><span id="pct">25%</span></div><div class="bar"><div class="fill" id="fill"></div></div></div></div></header>
 <div class="layout"><aside class="side"><div class="label">HELE PAKKEN</div>
-<button class="lb on" data-i="0"><span class="num">01</span>Fiber – hele pakken</button>
+<button class="lb on" data-i="0"><span class="num">01</span>Telenor Fiber</button><button class="lb" data-i="1"><span class="num">02</span>Fordeler</button>
 <div class="label" style="margin-top:14px">T-WE</div>
-<button class="lb" data-i="1"><span class="num">02</span>Hva er T-We?</button><button class="lb" data-i="2"><span class="num">03</span>Kutt strømmekostnadene</button><button class="lb" data-i="3"><span class="num">04</span>Se hvor du vil</button><button class="lb" data-i="4"><span class="num">05</span>Funksjoner du får bruk for</button></aside><main class="card" id="content"></main></div><div class="foot">En enkel introduksjon til T-We. Tilgjengelighet og innhold kan endres over tid.</div>
+<button class="lb" data-i="2"><span class="num">03</span>Hva er T-We?</button><button class="lb" data-i="3"><span class="num">04</span>Kutt strømmekostnadene</button><button class="lb" data-i="4"><span class="num">05</span>Se hvor du vil</button><button class="lb" data-i="5"><span class="num">06</span>Funksjoner du får bruk for</button><div class="label" style="margin-top:18px">KONTAKT</div><button class="lb" id="contactMenu"><span class="num">☎</span>Kontakt</button></aside><main class="card" id="content">
+<section class="info-section">
+  <div class="info-card">
+    <div class="info-icon">🛡️</div>
+    <h3>Sikkerhet som følger med hjemmenettet</h3>
+    <p><strong>Svindel på nett blir stadig mer avansert.</strong> Falske SMS-er, e-poster og nettsider kan være vanskelige å skille fra ekte.</p>
+    <p>Med Telenor får du <strong>Nettvern+</strong>, Telenors sterkeste sikkerhetsfilter. Det kan blokkere kjente svindelsider, phishing og andre digitale trusler før du kommer inn på siden.</p>
+    <p>Beskyttelsen gjelder hele hjemmenettet når enhetene er koblet til Telenor-ruteren – mobil, PC, nettbrett, TV og andre enheter.</p>
+    <p class="highlight"><strong>Fiber handler altså ikke bare om hastighet – det handler også om et stabilt og tryggere hjemmenett.</strong></p>
+  </div>
+  <div class="info-card">
+    <div class="info-icon">⚡</div>
+    <h3>Flere aktører gir mer konkurranse</h3>
+    <p>Telenors fibernett er en del av infrastrukturen som andre tilbydere kan få tilgang til gjennom grossisttilgang.</p>
+    <p>For deg som kunde betyr dette <strong>flere valgmuligheter og mer konkurranse</strong>, som kan bidra til bedre priser og tilbud.</p>
+  </div>
+</section>
+
+</main><section class="contact-section" id="contactSection"><h2>Kontakt</h2><p>Har du spørsmål om løsningen, tilbudet eller T-We? Velg om du vil kontakte meg direkte eller Telenor kundeservice.</p><div class="contact-grid"><a class="contact-card" href="tel:+4747666135"><b>Kontakt meg</b><span>📞 +47 47 66 61 35</span><br><span>✉️ william.zahl@electi.no</span></a><a class="contact-card" href="https://www.telenor.no/kundeservice/" target="_blank" rel="noopener"><b>Telenor Kundeservice</b><span>📞 915 09 000</span><br><span>💬 Kontakt Telenor på nett</span></a></div></section></div><div class="foot">En enkel introduksjon til T-We. Tilgjengelighet og innhold kan endres over tid.</div><button class="contact-fab" id="contactFab" aria-label="Kontakt meg" title="Kontakt meg">☎</button><div class="contact-box" id="contactBox"><button class="contact-close" id="contactClose" aria-label="Lukk">×</button><h3>Kontakt meg</h3><p>Har du spørsmål om tilbudet? Ta gjerne kontakt direkte.</p><a class="contact-link" href="tel:+4747666135">📞 <b>+47 47 66 61 35</b></a><a class="contact-link" href="mailto:william.zahl@electi.no">✉️ <b>william.zahl@electi.no</b></a></div>
 <script>
 const V=id=>`<div class="video"><iframe src="https://www.youtube.com/embed/${id}?vq=hd1080" allowfullscreen></iframe></div>`;
 const L=[
-["Fiber – dette får du med i pakken","Raskt og stabilt internett er grunnlaget for alt i hjemmet. Her får du en enkel oversikt over fiberhastighetene – og de ekstra fordelene som følger med Telenor Fiber.",`
-<p class="text">Fiber er en <b>direkte fiberforbindelse helt inn i boligen</b>. Det gir høy kapasitet og en stabil forbindelse som passer godt til streaming, gaming, hjemmekontor og mange enheter samtidig.</p>
+["Telenor Fiber","Raskt og stabilt internett – enkelt forklart.",`
+<p class="text">Fiber gir høy kapasitet og en stabil forbindelse for streaming, gaming, hjemmekontor og mange enheter samtidig.</p>
 <h2 class="st">Velg hastigheten som passer hjemmet</h2>
 <div class="grid">
-<div class="info"><b>Fiber 150</b><p>Et godt valg for moderat bruk, for eksempel surfing, sosiale medier, HD-streaming og et mindre antall enheter.</p></div>
-<div class="info"><b>Fiber 500 ⭐</b><p>Den mest populære hastigheten. Passer godt for familier, flere samtidige brukere, 4K-streaming, gaming og videomøter.</p></div>
-<div class="info"><b>Fiber 1000</b><p>Maksimal kapasitet for hjem med mange brukere, mange enheter og høy samtidig bruk.</p></div>
+<div class="info"><b>Fiber 150</b><p>For moderat bruk og et mindre antall enheter.</p></div>
+<div class="info"><b>Fiber 500 ⭐</b><p>Populær for familier, flere brukere, 4K, gaming og videomøter.</p></div>
+<div class="info"><b>Fiber 1000</b><p>Maksimal kapasitet for mange brukere og enheter samtidig.</p></div>
 </div>
-<div class="note"><b>Enkelt forklart:</b> Jo flere som bruker nettet samtidig, og jo mer krevende ting dere gjør, desto mer kapasitet er det nyttig å ha. Fiber 500 er derfor et veldig godt allround-valg for mange familier.</div>
+<div class="note"><b>Enkelt forklart:</b> Flere brukere og mer krevende bruk krever mer kapasitet. Fiber 500 er derfor et godt allround-valg for mange.</div>
 <h2 class="st">Mer enn bare raskt internett</h2>
 <div class="grid">
-<div class="info"><b>WiFi Ruter II</b><p>Moderne WiFi-utstyr følger med, slik at hjemmenettet kan fordeles trådløst til mobil, PC, TV, nettbrett og andre enheter.</p></div>
-<div class="info"><b>Nettvern+</b><p>Et ekstra sikkerhetsfilter som kan blokkere tilgangen til kjente farlige eller falske nettsider.</p></div>
-<div class="info"><b>WiFi-eksperter</b><p>Du har tilgang til hjelp med hjemmenettet dersom du trenger råd eller feilsøking.</p></div>
+<div class="info"><b>WiFi Ruter II</b><p>WiFi-utstyr som kobler mobil, PC, TV og andre enheter til nettet.</p></div>
+<div class="info"><b>Nettvern+</b><p>Sikkerhetsfilter som kan blokkere kjente farlige eller falske nettsider.</p></div>
+<div class="info"><b>WiFi-eksperter</b><p>Hjelp med hjemmenettet når du trenger råd eller feilsøking.</p></div>
 </div>
 <div class="note"><b>Alltid På Nett-garanti:</b> Hvis det oppstår feil på bredbåndsforbindelsen, kan opptil <b>5 personer i husstanden</b> med Telenor mobil få <b>200 GB mobildata hver i opptil 5 dager</b>, mens feilen løses.</div>
-<h2 class="st">Og du kan kombinere det med T-We</h2>
-<p class="text">Fiber gir selve forbindelsen inn i huset, mens T-We gir TV og underholdning. Sammen får du en komplett løsning for internett, TV og streaming.</p>
-<div class="cta"><h2>Først: nettet. Så: underholdningen.</h2><p>Se videre for å få en enkel forklaring på hva T-We er, hvordan det kan samle strømmetjenestene dine og hvilke funksjoner du faktisk får bruk for.</p></div>`],
+<div class="cta"><h2>Fiber + T-We</h2><p>Fiber gir forbindelsen. T-We samler TV og streaming.</p></div>`],
+
+["Fordeler","Hvorfor er dette interessant for deg som kunde?",`
+<p class="text">Telenor er <b>majoritetseid av den norske staten</b>, som eier 53,97 % av aksjene.</p>
+<p class="text">I tillegg er Telenor pålagt å gi andre bredbåndstilbydere tilgang til deler av fibernettet gjennom grossisttilgang. Det betyr at andre aktører kan levere bredbånd over Telenors fibernett der vilkårene og tilgjengeligheten tillater det.</p>
+<div class="grid"><div class="info"><b>Flere valgmuligheter</b><p>Flere tilbydere kan konkurrere om kundene.</p></div><div class="info"><b>Konkurranse</b><p>Konkurranse kan bidra til bedre priser og tilbud.</p></div><div class="info"><b>Stort fibernett</b><p>Telenor tilbyr også grossistprodukter basert på sitt fibernett.</p></div></div>
+<div class="note"><b>Kort fortalt:</b> Det er regulering og grossisttilgang – ikke statlig eierskap alene – som gjør at andre tilbydere kan få tilgang til Telenors fibernett.</div>`],
 
 ["Hva er T-We?","T-We samler TV, strømmetjenester og nyttige TV-funksjoner på ett sted – slik at det blir enklere å finne noe å se på.",`
 <p class="text">Tenk på T-We som et <b>samlet underholdningssenter</b> på TV-en. Du får TV-kanaler og strømmetjenester fra samme løsning, i stedet for å måtte hoppe mellom mange forskjellige steder.</p>
@@ -57,6 +111,18 @@ ${V("EePXLpynYbo")}<h2 class="st">T-We på Apple TV</h2><p class="text">Har du A
 <div class="cta"><h2>Da har du fått oversikten 👌</h2><p>Fiber sørger for forbindelsen, og T-We samler TV og streaming. Sammen får du en komplett løsning for hjemmet.</p></div>`]
 ];
 let cur=0;
-function render(){let x=L[cur];document.getElementById("content").innerHTML=`<div class="kick">Leksjon ${String(cur+1).padStart(2,"0")}</div><h1>${x[0]}</h1><p class="lead">${x[1]}</p>${x[2]}<div class="actions"><button class="nav" id="prev" ${cur?"":"disabled"}>← Forrige</button><button class="nav primary" id="next">${cur<4?"Neste leksjon →":"Til toppen ↑"}</button></div>`;document.querySelectorAll(".lb").forEach((b,i)=>b.classList.toggle("on",i===cur));let p=(cur+1)/5*100;document.getElementById("fill").style.width=p+"%";document.getElementById("pct").textContent=Math.round(p)+"%";document.getElementById("count").textContent=`Leksjon ${cur+1} av 5`;document.getElementById("prev").onclick=()=>{if(cur){cur--;render();scrollTo({top:0,behavior:"smooth"})}};document.getElementById("next").onclick=()=>{if(cur<4){cur++;render();scrollTo({top:0,behavior:"smooth"})}else scrollTo({top:0,behavior:"smooth"})}}
-document.querySelectorAll(".lb").forEach(b=>b.onclick=()=>{cur=+b.dataset.i;render();scrollTo({top:0,behavior:"smooth"})});render();
-</script></body></html>
+function render(){let x=L[cur];document.getElementById("content").innerHTML=`<img class="lesson-logo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Telenor_Logo_(symbol_and_wordmark).svg" alt="Telenor"><div class="kick">Leksjon ${String(cur+1).padStart(2,"0")}</div><h1>${x[0]}</h1><p class="lead">${x[1]}</p>${x[2]}<div class="actions"><button class="nav" id="prev" ${cur?"":"disabled"}>← Forrige</button><button class="nav primary" id="next">${cur<5?"Neste leksjon →":"Til toppen ↑"}</button></div>`;document.querySelectorAll(".lb").forEach((b,i)=>b.classList.toggle("on",i===cur));let p=(cur+1)/6*100;document.getElementById("fill").style.width=p+"%";document.getElementById("pct").textContent=Math.round(p)+"%";document.getElementById("count").textContent=`Leksjon ${cur+1} av 6`;document.getElementById("prev").onclick=()=>{if(cur){cur--;render();scrollTo({top:0,behavior:"smooth"})}};document.getElementById("next").onclick=()=>{if(cur<5){cur++;render();scrollTo({top:0,behavior:"smooth"})}else scrollTo({top:0,behavior:"smooth"})}}
+document.querySelectorAll(".lb").forEach(b=>b.onclick=()=>{cur=+b.dataset.i;render();scrollTo({top:0,behavior:"smooth"})});document.getElementById("contactMenu").onclick=()=>document.getElementById("contactSection").scrollIntoView({behavior:"smooth"});const contactFab=document.getElementById("contactFab"),contactBox=document.getElementById("contactBox"),contactClose=document.getElementById("contactClose");contactFab.onclick=()=>contactBox.classList.toggle("on");contactClose.onclick=()=>contactBox.classList.remove("on");render();
+</script>
+<div class="contact-panel">
+  <h2>Kontakt</h2>
+  <p>Har du spørsmål om Telenor Fiber eller T-We? Du kan kontakte meg direkte, eller Telenor kundeservice.</p>
+  <p><strong>Din selger</strong><br>
+  📞 <a href="tel:+4747666135">+47 47 66 61 35</a><br>
+  ✉️ <a href="mailto:william.zahl@electi.no">william.zahl@electi.no</a></p>
+  <p><strong>Telenor kundeservice</strong><br>
+  📞 <a href="tel:91509000">915 09 000</a></p>
+</div>
+
+<a class="contact-float" href="tel:+4747666135" aria-label="Kontakt meg">☎</a>
+</body></html>
