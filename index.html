@@ -54,12 +54,34 @@ body{background:var(--telenor-pale)!important;color:var(--telenor-text)!importan
 .lesson-block h1{margin-top:9px}
 @media(max-width:850px){.lesson-block{scroll-margin-top:175px}}
 </style>
+
+<style>
+/* v14 refinements */
+.contact-grid{gap:22px}
+.contact-card{padding:24px;min-height:185px}
+.contact-card b{margin-bottom:12px;font-size:15px}
+.contact-card span{margin-top:9px}
+.contact-card small{display:block;margin-top:16px;color:#527080;line-height:1.55;font-size:12px}
+.contact-phone{font-size:15px!important;font-weight:750;color:#1d3850!important;letter-spacing:.2px}
+.contact-email{font-size:13px!important}
+.support-card{display:flex;justify-content:space-between;gap:28px;align-items:stretch}
+.support-copy{flex:1}
+.telmi-box{width:245px;border-left:1px solid #d6edf9;padding-left:24px;display:flex;flex-direction:column;justify-content:center}
+.telmi-title{font-size:12px;color:#527080;font-weight:700;margin-bottom:7px}
+.telmi-brand{display:flex;align-items:center;gap:9px;margin-bottom:7px;color:#0077c8}
+.telmi-brand strong{font-size:21px;letter-spacing:-.3px}
+.telmi-bubble{width:32px;height:32px;border-radius:10px;background:#eaf7ff;display:flex;align-items:center;justify-content:center;font-size:17px}
+.telmi-text{font-size:12px;color:#607086;line-height:1.5}
+.telmi-link{display:inline-block;margin-top:10px;color:#0077c8;font-weight:750;text-decoration:none;font-size:12px}
+.telmi-link:hover{text-decoration:underline}
+@media(max-width:700px){.support-card{display:block}.telmi-box{width:auto;border-left:0;border-top:1px solid #d6edf9;padding:18px 0 0;margin-top:20px}}
+</style>
 </head><body>
 <header class="top"><div class="topin"><div class="brand"><div><b>T-We KUNDESKOLE</b><div class="sub">T-We & Streaming – enkelt forklart</div></div><span id="count" style="font-size:13px;opacity:.8">Leksjon 1 av 6</span></div><div class="prog"><div class="pl"><span>Din fremgang</span><span id="pct">25%</span></div><div class="bar"><div class="fill" id="fill"></div></div></div></div></header>
 <div class="layout"><aside class="side"><div class="label">HELE PAKKEN</div>
-<button class="lb on" data-i="0"><span class="num">01</span>Telenor Fiber</button><button class="lb" data-i="1"><span class="num">02</span>Fordeler</button>
+<button class="lb on" data-i="0"><span class="num">1</span>Telenor Fiber</button><button class="lb" data-i="1"><span class="num">2</span>Fordeler</button>
 <div class="label" style="margin-top:14px">T-WE</div>
-<button class="lb" data-i="2"><span class="num">03</span>Hva er T-We?</button><button class="lb" data-i="3"><span class="num">04</span>Kutt strømmekostnadene</button><button class="lb" data-i="4"><span class="num">05</span>Se hvor du vil</button><button class="lb" data-i="5"><span class="num">06</span>Funksjoner du får bruk for</button><div class="label" style="margin-top:18px">KONTAKT</div><button class="lb" id="contactMenu"><span class="num">☎</span>Kontakt</button></aside><main class="card" id="content">
+<button class="lb" data-i="2"><span class="num">3</span>Hva er T-We?</button><button class="lb" data-i="3"><span class="num">4</span>Kutt strømmekostnadene</button><button class="lb" data-i="4"><span class="num">5</span>Se hvor du vil</button><button class="lb" data-i="5"><span class="num">6</span>Funksjoner du får bruk for</button><div class="label" style="margin-top:18px">KONTAKT</div><button class="lb" id="contactMenu"><span class="num">☎</span>Kontakt</button></aside><main class="card" id="content">
 <section class="info-section">
   <div class="info-card">
     <div class="info-icon">🛡️</div>
@@ -77,7 +99,7 @@ body{background:var(--telenor-pale)!important;color:var(--telenor-text)!importan
   </div>
 </section>
 
-</main></div><section class="contact-section" id="contactSection"><div class="contact-inner"><div><div class="contact-kicker">KONTAKT</div><h2>Trenger du hjelp?</h2><p>Velg om du vil kontakte meg direkte eller Telenor kundeservice.</p></div><div class="contact-grid"><a class="contact-card seller" href="tel:+4747666135"><b>Kontakt selger (William Zahl)</b><span>📞 +47 47 66 61 35</span><span>✉️ william.zahl@electi.no</span><small style="display:block;margin-top:10px;color:#527080">Ta kontakt med meg hvis du lurer på noe før du bestemmer deg.</small></a><a class="contact-card" href="https://www.telenor.no/kundeservice/" target="_blank" rel="noopener"><b>Kontakt Telenor kundeservice</b><span>📞 915 09 000</span><span>💬 Kundeservice på nett</span><small style="display:block;margin-top:10px;color:#527080">For deg som har blitt Telenor-kunde og har et aktivt kundeforhold.</small><small style="display:block;margin-top:7px;color:#527080"><b>Døgnåpen digital hjelp:</b> Telmi er tilgjengelig 24/7.</small></a></div></div></section><div class="foot">En enkel introduksjon til T-We. Tilgjengelighet og innhold kan endres over tid.</div>
+</main></div><section class="contact-section" id="contactSection"><div class="contact-inner"><div><div class="contact-kicker">KONTAKT</div><h2>Trenger du hjelp?</h2><p>Velg om du vil kontakte meg direkte eller Telenor kundeservice.</p></div><div class="contact-grid"><a class="contact-card seller" href="tel:+4747666135"><b>Kontakt selger (William Zahl)</b><span class="contact-phone">📞 +47 47666135</span><span class="contact-email">✉️ william.zahl@electi.no</span><small>Ta kontakt med meg hvis du lurer på noe før du bestemmer deg.</small></a><div class="contact-card support-card"><div class="support-copy"><b>Kontakt Telenor kundeservice</b><span class="contact-phone">📞 915 09 000</span><span>💬 Kundeservice på nett</span><small>For deg som har blitt Telenor-kunde og har et aktivt kundeforhold.</small></div><div class="telmi-box"><div class="telmi-title">Trenger du hjelp?</div><div class="telmi-brand"><span class="telmi-bubble">💬</span><strong>Telmi</strong></div><div class="telmi-text">Telenors chatbot er tilgjengelig <b>24/7</b> og kan hjelpe deg med spørsmål og enkel feilsøking.</div><a href="https://www.telenor.no/kundeservice/" target="_blank" rel="noopener" class="telmi-link">Chat med Telmi →</a></div></div></div></div></section><div class="foot">En enkel introduksjon til T-We. Tilgjengelighet og innhold kan endres over tid.</div>
 <script>
 const V=id=>`<div class="video"><iframe src="https://www.youtube.com/embed/${id}?vq=hd1080&hd=1" allowfullscreen></iframe></div>`;
 const L=[
@@ -134,7 +156,7 @@ ${V("EePXLpynYbo")}<h2 class="st">T-We på Apple TV</h2><p class="text">Har du A
 ];
 
 const content=document.getElementById("content");
-content.innerHTML=`<div class="lesson-logo" aria-label="Telenor logo"><span></span></div>`+L.map((x,i)=>`<section class="lesson-block" id="lesson-${i}">${i===0?"":`<div class="kick">Leksjon ${String(i+1).padStart(2,"0")}</div>`}<h1>${x[0]}</h1><p class="lead">${x[1]}</p>${x[2]}<div class="actions"><button class="nav" ${i===0?"disabled":""} onclick="document.getElementById(\"lesson-${i-1}\")?.scrollIntoView({behavior:\"smooth\",block:\"start\"})">← Forrige</button>${i<5?`<button class="nav primary" onclick="document.getElementById(\"lesson-${i+1}\")?.scrollIntoView({behavior:\"smooth\",block:\"start\"})">Neste leksjon →</button>`:`<span></span>`}</div></section>`).join("");
+content.innerHTML=`<div class="lesson-logo" aria-label="Telenor logo"><span></span></div>`+L.map((x,i)=>`<section class="lesson-block" id="lesson-${i}">${i===0?"":`<div class="kick">Leksjon ${String(i+1)}</div>`}<h1>${x[0]}</h1><p class="lead">${x[1]}</p>${x[2]}<div class="actions"><button class="nav" ${i===0?"disabled":""} onclick="document.getElementById('lesson-${i-1}')?.scrollIntoView({behavior:'smooth',block:'start'})">← Forrige</button>${i<5?`<button class="nav primary" onclick="document.getElementById('lesson-${i+1}')?.scrollIntoView({behavior:'smooth',block:'start'})">Neste leksjon →</button>`:`<span></span>`}</div></section>`).join("");
 
 const items=[...document.querySelectorAll('.lb[data-i]')];
 const lessons=[...document.querySelectorAll('.lesson-block')];
