@@ -18,8 +18,8 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-s
 .top{position:sticky;top:0;z-index:50;background:linear-gradient(135deg,#0072c6,#008bd8);color:#fff;padding:22px 22px 19px;box-shadow:0 4px 18px rgba(0,75,125,.16)}
 .topin{max-width:1180px;margin:auto}
 .brandrow{display:flex;align-items:flex-start;justify-content:space-between;gap:24px}
-.brand b{display:block;font-size:29px;line-height:1.05;letter-spacing:-.8px;white-space:pre}
-.brand .sub{display:none}
+.brand b{display:block;font-size:29px;line-height:1.05;letter-spacing:-.8px}
+.brand .sub{font-size:14px;margin-top:8px;opacity:.86}
 .topright{display:flex;align-items:center;gap:20px}
 .count{font-size:13px;font-weight:750;white-space:nowrap}
 .lang{display:flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.09);border-radius:11px;padding:8px 11px}
@@ -54,7 +54,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-s
 .content{min-width:0}
 .lesson-logo{
   width:36px;height:36px;margin:0 0 16px;overflow:hidden;
-  background:url("https://www.telenor.no/favicon.ico") center/28px 28px no-repeat
+  background:url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Telenor_Logo_(symbol_and_wordmark).svg") left center/auto 36px no-repeat
 }
 .lesson{
   scroll-margin-top:142px;padding:7px 0 62px;margin-bottom:43px;border-bottom:1px solid var(--line)
@@ -123,6 +123,7 @@ h2.st{font-size:22px;color:var(--navy);margin:30px 0 12px}
 @media(max-width:620px){
   .top{padding:17px 16px}
   .brand b{font-size:22px}
+  .brand .sub{font-size:12px}
   .topright{gap:9px}
   .count{font-size:11px}
   .lang{padding:7px 8px}
@@ -266,8 +267,8 @@ h2.st{font-size:22px;color:var(--navy);margin:30px 0 12px}
   <div class="topin">
     <div class="brandrow">
       <div class="brand">
-        <b id="brand">Fiber &amp; T-We&nbsp;&nbsp;&nbsp; Introduksjon</b>
-        
+        <b id="brand">Fiber &amp; T-We&nbsp;&nbsp;&nbsp; Kundeskole</b>
+        <div class="sub" id="sub">Enklere hverdag. Mer underholdning.</div>
       </div>
       <div class="topright">
         <div class="count" id="count">Leksjon 1 av 6</div>
@@ -277,8 +278,6 @@ h2.st{font-size:22px;color:var(--navy);margin:30px 0 12px}
             <option value="en">English</option>
             <option value="es">Español</option>
             <option value="pl">Polski</option>
-            <option value="de">Deutsch</option>
-            <option value="fr">Français</option>
           </select>
         </label>
       </div>
@@ -496,11 +495,8 @@ pl:{
  ["Koszty streamingu","Połącz TV i streaming i zyskaj lepszy przegląd.",`<p class="text">Masz już kilka usług streamingowych? T-We ułatwia zebranie dużej części rozrywki w jednym miejscu.</p><div class="grid"><div class="info"><b>Zbierz rozrywkę</b><p>Znajdź kanały TV i usługi streamingowe w ramach jednego rozwiązania T-We.</p></div><div class="info"><b>Masz już konto?</b><p>Zazwyczaj nie musisz tworzyć nowego. Możesz połączyć istniejące konto z Telenor.</p></div><div class="info"><b>Zmieniaj w razie potrzeby</b><p>Zmieniaj treści, gdy zmieniają się Twoje zainteresowania.</p></div></div><div class="note"><b>Więcej usług:</b> Dodatkowe usługi streamingowe można dodać za 99 NOK/mies. Niektóre droższe pakiety sportowe mogą wymagać dopłaty różnicy.</div>${V(commonVideos.costs)}`],
  ["Oglądaj, gdzie chcesz","Zabierz T-We ze sobą – w domu, w domku lub w podróży.",`<p class="text">Dzięki aplikacji T-We możesz oglądać TV i rozrywkę na telefonie, tablecie, komputerze i kompatybilnych urządzeniach TV. Aplikacji można używać w <b>Norwegii i UE/EOG</b>, jeśli masz internet.</p><div class="grid"><div class="info"><b>Telefon i tablet</b><p>Oglądaj TV poza domem, w domku lub w domu.</p></div><div class="info"><b>PC i Mac</b><p>Oglądaj T-We bezpośrednio w przeglądarce.</p></div><div class="info"><b>Cała rodzina</b><p>Członkowie rodziny mogą korzystać z własnych profili.</p></div></div><div class="note"><b>Podróż:</b> Aplikacji T-We można używać w całej UE/EOG. Dostępne treści mogą się różnić ze względu na prawa, a niektóre programy są dostępne tylko w domu.</div>${V(commonVideos.travel)}<h2 class="st">T-We na Apple TV</h2><p class="text">Masz Apple TV? Pobierz aplikację T-We i zacznij korzystać.</p>${V(commonVideos.apple)}`],
  ["Funkcje","Funkcje smart TV, z których naprawdę skorzystasz.",`<p class="text">T-We Boks III działa podobnie jak smart TV – z aplikacjami, kanałami TV i funkcjami T-We w jednym rozwiązaniu.</p><div class="grid"><div class="info"><b>Archiwum tygodniowe</b><p>Wiele programów można oglądać do tygodnia wstecz bez nagrywania.</p></div><div class="info"><b>Start od początku</b><p>W obsługiwanych programach możesz rozpocząć oglądanie od początku.</p></div><div class="info"><b>Aplikacje i streaming</b><p>Korzystaj z YouTube i innych usług streamingowych bezpośrednio na TV.</p></div></div><div class="note"><b>Nagrywanie:</b> Nagrywanie jest osobną usługą dodatkową. Archiwum tygodniowe to coś innego.</div><div class="vc"><h3>Start od początku i wcześniejsze programy</h3><p>Zobacz, jak rozpocząć program od początku lub znaleźć programy, które już się skończyły.</p>${V(commonVideos.startover)}</div><div class="vc"><h3>Wypożycz film bezpośrednio w T-We</h3><p>Filmy można wypożyczać bezpośrednio z menu T-We.</p>${V(commonVideos.rent)}</div><div class="vc"><h3>YouTube bezpośrednio na TV</h3><p>T-We Boks III korzysta z Android TV i zapewnia dostęp do aplikacji takich jak YouTube.</p>${V(commonVideos.youtube)}</div><div class="vc"><h3>Ustaw T-We tam, gdzie chcesz</h3><p>Boks można połączyć z internetem przez WiFi, więc nie potrzebujesz gniazda TV dokładnie w miejscu, gdzie stoi telewizor.</p>${V(commonVideos.wifi)}</div><div class="cta"><h2>Masz już cały przegląd 👌</h2><p>Światłowód zapewnia połączenie, a T-We łączy TV i streaming.</p></div>`]
-]};
-// German and French are available in the language selector. Lesson content
-// falls back to the English lesson set until dedicated translations are added.
-T.de={...T.en, brand:"Fiber & T-We    Einführung", sub:"", progress:"Dein Fortschritt", count:"von", lesson:"Lektion", package:"DAS GESAMTPAKET", twe:"T-WE", contact:"KONTAKT", contactBtn:"Kontakt", prev:"← Vorherige", next:"Nächste Lektion →", help:"Brauchst du Hilfe?", intro:"Wähle, ob du mich direkt oder den Telenor-Kundenservice kontaktieren möchtest.", seller:"Verkäufer kontaktieren", sellerNote:"Kontaktiere mich gerne, wenn du vor deiner Entscheidung Fragen hast.", support:"Telenor-Kundenservice kontaktieren", supportNote:"Wenn du bereits Kunde bist oder gerade einen Vertrag unterschrieben hast, kannst du den Telenor-Kundenservice kontaktieren.", telmiLabel:"Digitale Hilfe", telmi:"Chatbot – Telenor 24/7", chat:"Chatbot öffnen →", footer:"Eine einfache Einführung in Fiber & T-We. Verfügbarkeit und Inhalte können sich ändern."};
-T.fr={...T.en, brand:"Fiber & T-We    Introduction", sub:"", progress:"Votre progression", count:"sur", lesson:"Leçon", package:"L'OFFRE COMPLÈTE", twe:"T-WE", contact:"CONTACT", contactBtn:"Contact", prev:"← Précédente", next:"Leçon suivante →", help:"Besoin d'aide ?", intro:"Choisissez de me contacter directement ou de contacter le service client Telenor.", seller:"Contacter le vendeur", sellerNote:"N'hésitez pas à me contacter si vous avez des questions avant de prendre votre décision.", support:"Contacter le service client Telenor", supportNote:"Si vous êtes déjà client ou venez de signer un contrat, vous pouvez contacter le service client Telenor.", telmiLabel:"Aide numérique", telmi:"Chatbot – Telenor 24/7", chat:"Ouvrir le chatbot →", footer:"Une introduction simple à Fiber & T-We. La disponibilité et le contenu peuvent changer."};
+]}
+};
 
 const langSelect=document.getElementById("languageSelect");
 let lang=localStorage.getItem("tweLang")||"no";
@@ -516,7 +512,7 @@ function render(){
   document.documentElement.lang=lang;
   document.title=t.brand;
   document.getElementById("brand").textContent=t.brand;
-  if(document.getElementById("sub")) document.getElementById("sub").textContent=t.sub;
+  document.getElementById("sub").textContent=t.sub;
   document.getElementById("progressText").textContent=t.progress;
   document.getElementById("packageLabel").textContent=t.package;
   document.getElementById("tweLabel").textContent=t.twe;
