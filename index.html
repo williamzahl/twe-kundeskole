@@ -48,7 +48,13 @@ body{background:var(--telenor-pale)!important;color:var(--telenor-text)!importan
 .contact-card.seller{border:2px solid #0077c8}
 .contact-fab{position:fixed;right:18px;bottom:18px;z-index:20;width:56px;height:56px;border-radius:50%;background:#0077c8;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:24px;box-shadow:0 8px 24px rgba(0,80,130,.25)}
 @media(max-width:580px){.contact-grid{grid-template-columns:1fr}.contact-section{padding:32px 18px}.contact-fab{right:14px;bottom:14px}}
-</style></head><body>
+</style><style>
+.lesson-block{scroll-margin-top:135px;padding:4px 0 55px;border-bottom:1px solid var(--line);margin-bottom:45px}
+.lesson-block:last-child{border-bottom:0;margin-bottom:0}
+.lesson-block h1{margin-top:9px}
+@media(max-width:850px){.lesson-block{scroll-margin-top:175px}}
+</style>
+</head><body>
 <header class="top"><div class="topin"><div class="brand"><div><b>T-We KUNDESKOLE</b><div class="sub">T-We & Streaming – enkelt forklart</div></div><span id="count" style="font-size:13px;opacity:.8">Leksjon 1 av 6</span></div><div class="prog"><div class="pl"><span>Din fremgang</span><span id="pct">25%</span></div><div class="bar"><div class="fill" id="fill"></div></div></div></div></header>
 <div class="layout"><aside class="side"><div class="label">HELE PAKKEN</div>
 <button class="lb on" data-i="0"><span class="num">01</span>Telenor Fiber</button><button class="lb" data-i="1"><span class="num">02</span>Fordeler</button>
@@ -71,7 +77,7 @@ body{background:var(--telenor-pale)!important;color:var(--telenor-text)!importan
   </div>
 </section>
 
-</main></div><section class="contact-section" id="contactSection"><div class="contact-inner"><div><div class="contact-kicker">KONTAKT</div><h2>Trenger du hjelp?</h2><p>Velg om du vil kontakte meg direkte eller Telenor kundeservice.</p></div><div class="contact-grid"><a class="contact-card seller" href="tel:+4747666135"><b>Kontakt selger (William Zahl)</b><span>📞 +47 47 66 61 35</span><span>✉️ william.zahl@electi.no</span><small style="display:block;margin-top:10px;color:#527080">Ta kontakt med meg hvis du lurer på noe før du bestemmer deg.</small></a><a class="contact-card" href="https://www.telenor.no/kundeservice/" target="_blank" rel="noopener"><b>Kontakt Telenor kundeservice</b><span>📞 915 09 000</span><span>💬 Kundeservice på nett</span><small style="display:block;margin-top:10px;color:#527080">For deg som har blitt Telenor-kunde og har et aktivt kundeforhold.</small><small style="display:block;margin-top:7px;color:#527080"><b>Døgnåpen digital hjelp:</b> Telmi er tilgjengelig 24/7.</small></a></div></div></section><div class="foot">En enkel introduksjon til T-We. Tilgjengelighet og innhold kan endres over tid.</div><a class="contact-fab" href="tel:+4747666135" aria-label="Ring meg" title="Ring meg">☎</a>
+</main></div><section class="contact-section" id="contactSection"><div class="contact-inner"><div><div class="contact-kicker">KONTAKT</div><h2>Trenger du hjelp?</h2><p>Velg om du vil kontakte meg direkte eller Telenor kundeservice.</p></div><div class="contact-grid"><a class="contact-card seller" href="tel:+4747666135"><b>Kontakt selger (William Zahl)</b><span>📞 +47 47 66 61 35</span><span>✉️ william.zahl@electi.no</span><small style="display:block;margin-top:10px;color:#527080">Ta kontakt med meg hvis du lurer på noe før du bestemmer deg.</small></a><a class="contact-card" href="https://www.telenor.no/kundeservice/" target="_blank" rel="noopener"><b>Kontakt Telenor kundeservice</b><span>📞 915 09 000</span><span>💬 Kundeservice på nett</span><small style="display:block;margin-top:10px;color:#527080">For deg som har blitt Telenor-kunde og har et aktivt kundeforhold.</small><small style="display:block;margin-top:7px;color:#527080"><b>Døgnåpen digital hjelp:</b> Telmi er tilgjengelig 24/7.</small></a></div></div></section><div class="foot">En enkel introduksjon til T-We. Tilgjengelighet og innhold kan endres over tid.</div>
 <script>
 const V=id=>`<div class="video"><iframe src="https://www.youtube.com/embed/${id}?vq=hd1080&hd=1" allowfullscreen></iframe></div>`;
 const L=[
@@ -92,7 +98,6 @@ const L=[
 </div>
 <div class="note"><b>Alltid På Nett-garanti:</b> Hvis det oppstår feil på bredbåndsforbindelsen, kan opptil <b>5 personer i husstanden</b> med Telenor mobil få <b>200 GB mobildata hver i opptil 5 dager</b>, mens feilen løses.</div>
 <div class="cta"><h2>Fiber + T-We</h2><p>Fiber gir forbindelsen. T-We samler TV og streaming.</p></div>`],
-
 ["Fordeler","Hvorfor er dette interessant for deg som kunde?",`
 <p class="text">Telenor er <b>majoritetseid av den norske staten</b>. Det betyr at staten eier over halvparten av selskapet.</p>
 <p class="text">Telenor har et stort og godt utbygd nett i Norge, og <b>Telenors mobilnett er kåret til Norges beste mobilnett av Opensignal i 2026</b>.</p>
@@ -103,24 +108,20 @@ const L=[
 <p><b>Nettvern+</b> kan for eksempel sjekke nettsider du prøver å besøke og blokkere sider som ser utrygge ut. Det kan blant annet beskytte mot phishing, falske nettbutikker og andre svindelforsøk.</p>
 <div class="highlight"><b>Kort fortalt:</b> Vi ønsker ikke bare å gi deg raskt internett – vi ønsker også å gjøre det tryggere å bruke nettet.</div>
 </div>`],
-
 ["Hva er T-We?","T-We samler TV, strømmetjenester og nyttige TV-funksjoner på ett sted – slik at det blir enklere å finne noe å se på.",`
 <p class="text">Tenk på T-We som et <b>samlet underholdningssenter</b> på TV-en. Du får TV-kanaler og strømmetjenester fra samme løsning, i stedet for å måtte hoppe mellom mange forskjellige steder.</p>
 <div class="grid"><div class="info"><b>TV og streaming</b><p>Samle underholdningen din og finn innhold fra flere tjenester på ett sted.</p></div><div class="info"><b>Enkelt å finne frem</b><p>Startmenyen gir deg oversikt over TV, anbefalinger og innhold.</p></div><div class="info"><b>Mer enn vanlig TV</b><p>T-We Boks III er en moderne strømmeboks med apper og T-We-funksjoner.</p></div></div>
 ${V("E6j2vVPcyGU")}<h2 class="st">Slik fungerer startmenyen</h2><p class="text">Denne videoen viser hvordan du faktisk finner frem i T-We og hvor du finner innholdet du vil se.</p>${V("NRMtmOvQyTc")}`],
-
 ["Kutt strømmekostnadene – og samle alt på ett sted","Har du flere strømmetjenester fra før? T-We gjør det enklere å samle TV og streaming i samme løsning.",`
 <p class="text">Mange betaler for flere strømmetjenester og TV-løsninger hver for seg. Med T-We kan du samle mye av underholdningen på ett sted og velge innhold etter hva du faktisk bruker.</p>
 <div class="grid"><div class="info"><b>Samle underholdningen</b><p>Finn TV-kanaler og strømmetjenester fra samme T-We-løsning.</p></div><div class="info"><b>Velg selv</b><p>Tilpass innholdet etter hva familien liker å se på.</p></div><div class="info"><b>Bytt etter behov</b><p>Innholdet kan endres når interessene dine endrer seg.</p></div></div>
 <div class="note"><b>Tips:</b> T-We har valgbart innhold der en plass kan brukes til en strømmetjeneste eller et utvalg TV-kanaler. Det finnes også mulighet for ekstra plass mot et tillegg.</div>${V("o7Miu1eKCLI")}`],
-
 ["Se hvor du vil – for hele familien","T-We følger deg videre enn TV-stua. Med T-We App kan du se TV og underholdning på mobil, nettbrett, PC og kompatible TV-enheter.",`
 <p class="text">T-We App er inkludert i TV-abonnementet og gjør det mulig å ta med seg underholdningen. Du kan bruke appen hjemme, på hytta eller på reise i <b>Norge og EU/EØS</b>, så lenge du har internett.</p>
 <div class="grid"><div class="info"><b>Mobil og nettbrett</b><p>Se TV når du er på farten – praktisk på hytta, på reise eller hjemme.</p></div><div class="info"><b>PC og Mac</b><p>Se T-We direkte i nettleseren på twe.no.</p></div><div class="info"><b>Flere i familien</b><p>Familiemedlemmer kan få tilgang og bruke egne profiler.</p></div></div>
 <div class="note"><b>På reise:</b> T-We App kan brukes i hele EU/EØS. Tilgjengelig innhold kan variere på grunn av rettigheter, og enkelte programmer er kun tilgjengelige hjemme.</div>
 <div class="note"><b>Utenfor EU/EØS:</b> Telenor garanterer ikke at T-We er tilgjengelig. VPN er ikke en del av Telenors offisielle løsning, så dette bør ikke presenteres som en garantert måte å få tilgang på.</div>
 ${V("EePXLpynYbo")}<h2 class="st">T-We på Apple TV</h2><p class="text">Har du Apple TV? Da kan du laste ned T-We-appen og bruke TV-en som visningspunkt for T-We. Videoen viser hvordan du kommer i gang.</p>${V("G_gjHw2JMAU")}`],
-
 ["Funksjoner du faktisk får bruk for","T-We Boks III fungerer mye som en smart-TV – men med T-We-funksjonene samlet rundt TV-opplevelsen.",`
 <p class="text">T-We Boks III er en Android TV-basert strømmeboks med apper, TV-kanaler og T-We-funksjoner. Den kan kobles til internett via WiFi eller nettverkskabel.</p>
 <div class="grid"><div class="info"><b>Ukesarkiv</b><p>Mange programmer kan sees opptil én uke tilbake uten at du tok opp programmet.</p></div><div class="info"><b>Start forfra</b><p>På programmer som støtter funksjonen kan du starte fra begynnelsen.</p></div><div class="info"><b>Apper og streaming</b><p>Bruk blant annet YouTube og andre strømmetjenester direkte på TV-en.</p></div></div>
@@ -131,9 +132,31 @@ ${V("EePXLpynYbo")}<h2 class="st">T-We på Apple TV</h2><p class="text">Har du A
 <div class="vc"><h3>4. Plasser T-We-boksen der du vil</h3><p>Boksen kan kobles til internett via WiFi. Du trenger derfor ikke TV-uttak akkurat der TV-en står.</p>${V("kRL9QuQnxh0")}</div>
 <div class="cta"><h2>Da har du fått oversikten 👌</h2><p>Fiber sørger for forbindelsen, og T-We samler TV og streaming. Sammen får du en komplett løsning for hjemmet.</p></div>`]
 ];
-let cur=0;
-function render(){let x=L[cur];document.getElementById("content").innerHTML=`<a class="lesson-logo" href="https://brand.telenor.com/no/identitet/logo" target="_blank" rel="noopener" aria-label="Telenor logo"><span></span></a>${cur===0?"":`<div class="kick">Leksjon ${String(cur+1).padStart(2,"0")}</div>`}<h1>${x[0]}</h1><p class="lead">${x[1]}</p>${x[2]}<div class="actions"><button class="nav" id="prev" ${cur?"":"disabled"}>← Forrige</button><button class="nav primary" id="next">${cur<5?"Neste leksjon →":"Til toppen ↑"}</button></div>`;document.querySelectorAll(".lb").forEach((b,i)=>b.classList.toggle("on",i===cur));let p=(cur+1)/6*100;document.getElementById("fill").style.width=p+"%";document.getElementById("pct").textContent=Math.round(p)+"%";document.getElementById("count").textContent=`Leksjon ${cur+1} av 6`;document.getElementById("prev").onclick=()=>{if(cur){cur--;render();scrollTo({top:0,behavior:"smooth"})}};document.getElementById("next").onclick=()=>{if(cur<5){cur++;render();scrollTo({top:0,behavior:"smooth"})}else scrollTo({top:0,behavior:"smooth"})}}
-document.querySelectorAll(".lb").forEach(b=>b.onclick=()=>{cur=+b.dataset.i;render();scrollTo({top:0,behavior:"smooth"})});document.getElementById("contactMenu").onclick=()=>document.getElementById("contactSection").scrollIntoView({behavior:"smooth"});render();
+
+const content=document.getElementById("content");
+content.innerHTML=`<div class="lesson-logo" aria-label="Telenor logo"><span></span></div>`+L.map((x,i)=>`<section class="lesson-block" id="lesson-${i}">${i===0?"":`<div class="kick">Leksjon ${String(i+1).padStart(2,"0")}</div>`}<h1>${x[0]}</h1><p class="lead">${x[1]}</p>${x[2]}<div class="actions"><button class="nav" ${i===0?"disabled":""} onclick="document.getElementById(\"lesson-${i-1}\")?.scrollIntoView({behavior:\"smooth\",block:\"start\"})">← Forrige</button>${i<5?`<button class="nav primary" onclick="document.getElementById(\"lesson-${i+1}\")?.scrollIntoView({behavior:\"smooth\",block:\"start\"})">Neste leksjon →</button>`:`<span></span>`}</div></section>`).join("");
+
+const items=[...document.querySelectorAll('.lb[data-i]')];
+const lessons=[...document.querySelectorAll('.lesson-block')];
+function setActive(i){items.forEach((b,n)=>b.classList.toggle('on',n===i));}
+items.forEach(b=>b.onclick=()=>document.getElementById('lesson-'+b.dataset.i).scrollIntoView({behavior:'smooth',block:'start'}));
+document.getElementById('contactMenu').onclick=()=>document.getElementById('contactSection').scrollIntoView({behavior:'smooth',block:'start'});
+
+const observer=new IntersectionObserver(entries=>{
+  const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
+  if(visible){const i=lessons.indexOf(visible.target);if(i>=0){setActive(i);document.getElementById("count").textContent=`Leksjon ${i+1} av ${lessons.length}`;}}
+},{rootMargin:'-18% 0px -65% 0px',threshold:[0,.2,.5,1]});
+lessons.forEach(s=>observer.observe(s));
+
+function updateProgress(){
+ const max=document.documentElement.scrollHeight-window.innerHeight;
+ const pct=max>0?Math.min(100,Math.max(0,window.scrollY/max*100)):0;
+ document.getElementById('fill').style.width=pct+'%';
+ document.getElementById('pct').textContent=Math.round(pct)+'%';
+}
+window.addEventListener('scroll',updateProgress,{passive:true});
+document.getElementById('count').textContent='Leksjon 1 av '+lessons.length;
+updateProgress();
 </script>
 
 </body></html>
