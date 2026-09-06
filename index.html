@@ -253,13 +253,6 @@ h2.st{font-size:22px;color:var(--navy);margin:30px 0 12px}
   .contactcard.support > div:first-child { padding-bottom: 82px; }
 }
 </style>
-
-<style>
-/* v28 – align Telenor phone row with seller phone row */
-.contactcard.support > div:first-child > .contactrow {
-  margin-top: 18px!important;
-}
-</style>
 </head>
 <body>
 
@@ -536,7 +529,7 @@ function render(){
     </section>`).join("");
 
   buttons.forEach(b=>b.onclick=()=>go(+b.dataset.i));
-  document.getElementById("contactMenu").onclick=()=>{setContactActive(true);document.getElementById("contactSection").scrollIntoView({behavior:"smooth",block:"start"});};
+  document.getElementById("contactMenu").onclick=()=>document.getElementById("contactSection").scrollIntoView({behavior:"smooth",block:"start"});
   content.querySelectorAll("[data-prev]").forEach(b=>b.onclick=()=>go(+b.dataset.prev-1));
   content.querySelectorAll("[data-next]").forEach(b=>b.onclick=()=>go(+b.dataset.next+1));
 
@@ -562,11 +555,6 @@ function go(i){
 }
 function setActive(i){
   side.querySelectorAll(".lb").forEach((b,n)=>b.classList.toggle("on",n===i));
-  document.getElementById("contactMenu").classList.remove("on");
-}
-function setContactActive(on){
-  document.getElementById("contactMenu").classList.toggle("on",on);
-  if(on) side.querySelectorAll(".lb").forEach(b=>b.classList.remove("on"));
 }
 function updateCount(){
   const t=T[lang];
@@ -575,15 +563,8 @@ function updateCount(){
 function syncLessonToScroll(){
   const lessons=[...document.querySelectorAll(".lesson")];
   if(!lessons.length) return;
-  // When the contact section reaches the navigation anchor, Kontakt becomes active.
+  // Pick the lesson whose top is closest to the fixed header.
   const anchor=window.scrollY+165;
-  const contact=document.getElementById("contactSection");
-  if(contact && contact.offsetTop<=anchor){
-    setContactActive(true);
-    return;
-  }
-  setContactActive(false);
-  // Otherwise pick the lesson whose top is closest to the fixed header.
   let best=0;
   for(let i=0;i<lessons.length;i++){
     if(lessons[i].offsetTop<=anchor) best=i;
@@ -592,8 +573,6 @@ function syncLessonToScroll(){
     current=best;
     setActive(best);
     updateCount();
-  } else {
-    setActive(best);
   }
 }
 function updateContact(){
